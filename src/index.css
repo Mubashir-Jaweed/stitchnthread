@@ -1,5 +1,8 @@
+
 body {
   margin: 0;
+  overflow-x: hidden;
+background-color: #fff;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -7,7 +10,675 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+
+
+
+.Desktop-View .home{
+  background: url('./assets/home.png');
+  background-size: 100% 100%; 
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+      /* border: 1px solid rgb(255, 0, 0); */
 }
+
+
+
+
+.Desktop-View .navbar{
+  background:linear-gradient(150deg , rgb(0, 75, 172),rgb(7, 144, 222)  ) ;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  
+}
+
+
+.Desktop-View .n_logo{
+  /* border: 1px solid rgb(255, 89, 89); */
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.Desktop-View .logo{
+  height: 100px;
+  width: 200px;
+}
+
+
+.Desktop-View .n_tabs{
+  /* border: 1px solid orange; */
+    height: 100%;
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Desktop-View .n_tabs .n_tab{
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 15px 25px;
+  color: white;
+  border-radius: 50px;
+  position: relative;
+}
+
+.Desktop-View .n_tab::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: rgb(255, 255, 255);
+  left: 0;
+  bottom: 0;
+  transform: scale(0 , 1);
+  transition: 0.5s;
+}
+
+.Desktop-View .n_tab:hover::after{
+    transform: scale(1,1 );
+}
+
+.Desktop-View .n_tab:hover::before{
+  content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    border-top: 7vh solid transparent;
+    border-left: 12vh solid rgba(255, 255, 255, 0.066);
+    border-right: 1vh solid rgba(0, 94, 255, 0.323);
+}
+/* .n_tab:hover{
+    background-color: rgba(4, 61, 105, 0.149);
+} */
+
+
+
+.Desktop-View .per{
+    color: white;
+  margin-top: 100px;
+  /* border: 1px solid black; */
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items:flex-start;
+  text-align: start;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.Desktop-View .per_h{
+  margin-top: 130px;
+  font-weight: 600;
+  font-size: 35px;
+  width: 450px;
+    /* border: 1px solid black; */
+}
+
+.Desktop-View .per_t{
+    /* border: 1px solid black; */
+font-weight: 500;
+  font-size: 20px;
+    width: 600px;
+}
+.Desktop-View .per_sp {
+  color: Orange;
+  font-size: 22px;
+  font-weight: 550;
+}
+
+.Desktop-View .per_btn{
+  position: relative;
+  background:transparent;
+  color: white;
+  font-size: 18px;
+  border: 1px solid white;
+  padding: 10px 30px;
+  margin: 20px 10px 0 0;
+  border-radius :50px ;
+}
+
+.Desktop-View .per_btn:hover{
+  background-color: rgba(0, 179, 255, 0.352);
+}
+.Desktop-View .per_btn:last-child{
+  color: orange;
+    border: 1px solid orange;
+}
+
+
+
+.Desktop-View .p_b{
+  /* border: 1px solid black; */
+  height: 30vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.Desktop-View .pb_h{
+  font-weight: 600;
+  font-size: 35px;
+    color: rgb(7, 144, 222);
+}
+
+
+.Desktop-View .pb_s{
+  color: orange;
+}
+
+.Desktop-View .pb_t{
+  font-weight: 500;
+    font-size: 20px;
+      color: rgb(7, 144, 222);
+}
+
+.Desktop-View .about_cont{
+
+  position: relative;
+}
+.Desktop-View .about{
+  background: url('./assets/about.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    /* border: 1px solid rgb(255, 0, 0); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    color: white;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.Desktop-View .a_h{
+  font-weight: 600;
+    font-size: 35px;
+    width: 800px;
+    /* border: 1px solid black; */
+}
+
+.Desktop-View .a_t{
+  font-weight: 500;
+    font-size: 20px;
+        width: 900px;
+}
+
+.Desktop-View .a_ts {
+  color: Orange;
+    font-size: 22px;
+    font-weight: 550;
+}
+
+
+.Desktop-View .ser{
+  /* border: 1px solid rgb(251, 255, 0); */
+  height: 40vh;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top:80vh ;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  align-items: center;
+  flex-wrap: wrap;
+  z-index: 5;
+}
+
+.Desktop-View .ser_box{
+
+  /* border: 1px solid magenta; */
+  height: 200px;
+  width: 180px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow:  0 0 2px 3px rgba(211, 211, 211, 0.553);
+              display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+}
+
+
+.Desktop-View .ser_i{
+  background: linear-gradient( rgb(0, 75, 172), rgb(7, 144, 222));
+  height: 80px;
+  width: 80px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size:100px;
+  color: #fff;
+}
+
+.Desktop-View .ser_i_t{
+  font-weight: 500;
+    font-size: 16px;
+    color: rgb(7, 144, 222);
+}
+
+
+.Desktop-View .dig{
+  height: 100vh;
+  width: 100%;
+  padding-top: 120px;
+      color: rgb(7, 144, 222);
+      position: relative;
+      /* z-index: -5; */
+      display: flex;
+      justify-content: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+text-align: start;
+          }
+
+.Desktop-View .dig-back{
+top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -10;
+  opacity: 0.10;
+}
+
+.Desktop-View .dig-main{
+  /* margin-top: 50px; */
+width: 70%;
+/* border: 1px solid black; */
+display: flex;
+/* align-items: center; */
+flex-direction: column;
+/* gap: 100px; */
+}
+.Desktop-View .dig-h{
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+}
+.Desktop-View .dig-acc{
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  height: 90%;
+}
+
+
+.Desktop-View .acc-item{
+  /* border: 1px solid red; */
+  color: black;
+  /* font-family: inherit; */
+  width: 90%;
+}
+
+.Desktop-View .acc-h{
+  font-size: 25px;
+  font-weight: 700;
+  box-shadow: 0px 0px 5px 2px rgb(208, 208, 208);
+  background-color: rgba(208, 208, 208, 0.403);
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;  
+  position: relative;
+}
+
+
+.Desktop-View .acc-d{
+  position: absolute;
+  right: 10px;
+  animation: upDown 2s infinite;
+}
+
+
+@keyframes upDown{
+  0%{
+      transform: translateY(0px);
+  }
+  25%{
+      transform: translateY(5px);
+  }
+  50%{
+      transform: translateY(0px);
+  }
+  75%{
+      transform: translateY(-5px);
+  }
+  100%{
+      transform: translateY(0px);
+  }
+}
+
+
+.Desktop-View .acc-i{
+  color: rgb(105, 105, 105);
+  padding: 0 10px;
+}
+
+
+.Desktop-View .acc-b{
+  transition: 1s;
+  /* border:1px solid black; */
+  /* margin: 20px 0; */
+  height: 0px;
+  padding-left: 20px;
+  color: rgb(7, 144, 222);
+  opacity: 0;
+}
+
+
+.Desktop-View .active{
+  height: 180px;
+  opacity: 10;
+}
+
+.Desktop-View .acc-b-h{
+  font-family: Georgia,
+    "Times New Roman",
+    Times,
+    serif;
+    color: rgb(255, 166, 0);
+   font-weight: 500;
+   font-size: 20px;
+   margin: 10px 0;
+}
+
+.Desktop-View .acc-b-t{
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+
+
+
+
+.Desktop-View .carousel{
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  color: white;
+  font-family: inherit;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* gap: 30px; */
+  align-items: center;
+  background: url('../src/assets/carousel.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+
+
+
+.Desktop-View .car-h{
+  font-weight: 600;
+    font-size: 35px;
+    margin-top: 80px;
+}
+
+.Desktop-View .car-main{
+  /* padding-left: 30px; */
+  height: 350px;
+  width: 70vw;
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 0;
+}
+ .Desktop-View .car-btn:hover{
+  opacity: 1;
+}
+.Desktop-View .car-btn{
+  position: absolute;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: none;
+  transition: 0.5s;
+  opacity: 0.2;
+  color:rgb(7, 144, 222) ;
+  background-color: #fff;
+}
+.Desktop-View .l{
+  left: 10%;
+  top: 300px;
+}
+.Desktop-View .r{
+  right: 10%;
+  top: 300px;
+}
+.Desktop-View .car-p{
+    margin: 0 8px;
+  height: 250px;
+  width: 250px;
+  border-radius: 5px;
+    position: relative;
+    transition: 2s;
+}
+
+.Desktop-View .car-p img{
+  height: 250px;
+  width: 250px;
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: -5;
+}
+
+.Desktop-View .car-d{
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  width: 100%;
+  border-radius: 5px;
+  height: 0;
+    transition: 0.3s;
+    position: absolute;
+    bottom: 0;
+}
+
+.Desktop-View .car-d p{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+
+.Desktop-View .car-p:hover .car-d{
+  height: 100%;
+  opacity: 0 .8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Desktop-View .con{
+  height: 100vh;
+  width: 100%;
+  /* border: 1px solid red; */
+
+display: flex;
+
+
+}
+
+
+.Desktop-View .con-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+  /* gap: 50px; */
+  
+  
+}
+
+.Desktop-View .con-img{
+  height: 600px;
+  /* width: 600px; */
+}
+
+
+.Desktop-View .con-h{
+  font-size: 30px;
+  /* padding-left: 80px; */
+  font-weight: 600;
+  color: rgb(7, 144, 222);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    
+}
+
+
+.Desktop-View .con-t{
+  /* padding-left: 100px; */
+  font-weight: 500;
+    font-size: 20px;
+    color: orange;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+}
+
+
+.Desktop-View .con-form{
+  flex: 1;
+  background: url('./assets/contact.png');
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* text-align: end; */
+    gap: 50px;
+}
+
+.Desktop-View .form{
+  border: 5px solid ;
+  border-color: rgb(0, 75, 172) rgb(7, 144, 222) rgb(137, 188, 255) rgb(0, 204, 255) ;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 400px;
+
+}
+
+.Desktop-View .con-inp{
+  outline-color:rgb(0, 106, 172);
+    border-radius: 5px;
+  height: 40px;
+  width: 80%;
+  background-color: rgb(247, 247, 247);
+  padding-left: 10px;
+}
+
+
+.Desktop-View .con-btn{
+  height: 40px;
+    width: 80%;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+    
+    background: linear-gradient(150deg, rgb(0, 75, 172), rgb(7, 144, 222));
+}
+
+
+.Desktop-View .footer{
+  /* height: 100px; */
+  width: 100vw;
+  color: #fff;
+      background: linear-gradient(330deg, rgb(0, 75, 172), rgb(7, 144, 222));
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+.Desktop-View .foo-main{
+  width: 80% ;
+  margin: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+
+.Desktop-View .foo-p{
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+  font-size: 15px;
+}
+
+.Desktop-View .foo-p:hover{
+  color: orange;
+}
+
+
+.Desktop-View .foo-i{
+  font-size: 20px;
+  margin: 10px;
+  border: 0.5px solid rgb(215, 215, 215);
+  padding: 5px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.Desktop-View .foo-i:hover{
+  color: orange;
+  border-color: orange;
+}
+
+
+
+
